@@ -1,0 +1,15 @@
+{
+  "name": "reactDemo",
+  "version": "1.0.0",
+  "description": "my first demo",
+  "main": "index.js",
+  "author": "zhaohj",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "webpack": "^3.10.0"
+  }
+}
