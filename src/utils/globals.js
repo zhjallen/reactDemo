@@ -13,8 +13,8 @@ window.Link = Link;
 window.Router = Router;
 window.Route = Route;
 window.IndexRoute = IndexRoute;
-window.RootRoute = RootRoute;
-window.ModuleRoute = ModuleRoute;
+// window.RootRoute = RootRoute;
+// window.ModuleRoute = ModuleRoute;
 window.IndexRedirect = IndexRedirect;
 window.History = browserHistory;
 

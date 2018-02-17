@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script src="https://use.fontawesome.com/142a2feca9.js"></script>
+    <link rel="shortcut icon" href="/static/images/logo4.png" type="image/x-icon" />
+    <link rel="icon" sizes="any" mask href="/static/images/logo.svg" /> -->
+    <title>reactdemo</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 允许移动设备将其识别成WEB应用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 关闭手机号自动识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 让360浏览器默认使用chrome核心 -->
+    <meta name="renderer" content="webkit" />
+    <!-- 禁止百度爬虫-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- 引入标准CSS-->
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <!-- <script language="javascript">
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+        window.onload = function () {
+            let webversion = window.getCookie('webversion');
+            let version = webversion && webversion !== 'null' && webversion !== 'undefined' ? webversion : ''
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = '/dist/bundle' + version + '.js';
+            head.appendChild(script);
+        }
+    </script> -->
+
+</head>
+
+<body>
+    <div id="react-demo" style="height:100%">
+    </div>
+</body>
+<script src="./dist/bundle.js"></script>
+
+</html>
