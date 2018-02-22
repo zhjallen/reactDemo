@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
     /* 入口 */
-    entry: path.join(__dirname, 'src/entry/index.js'),
+    devtool: 'inline-source-map',
+    entry: './src/entry/index.js',
 
     /** 输出 */
     output: {
@@ -14,6 +15,21 @@ module.exports = {
             test: /\.js$/,
             use: ['babel-loader?cacheDirectory=true'],
             include: path.join(__dirname, 'src'),
-        }],
+        },
+        {
+            test: /\.css$/,
+            use: [
+                'style-loader',
+                'css-loader',
+            ],
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+                'file-loader',
+            ],
+        },
+        ],
+
     },
 };
