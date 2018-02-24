@@ -1,11 +1,12 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 
 module.exports = {
-    devtool: 'inline-source-map',
+    devtool: 'eval-source-map',
     /* 入口 */
     entry: [
         hotMiddlewareScript,
@@ -21,6 +22,11 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new webpack.HotModuleReplacementPlugin(),
+        new UglifyJSPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('dev'),
+            'process.env.VERNAME': JSON.stringify('dev1'),
+        }),
     ],
     module: {
         rules: [{
