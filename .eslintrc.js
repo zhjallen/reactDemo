@@ -16,6 +16,7 @@ module.exports = {
         'import/prefer-default-export': 1,
         'no-tabs': 0,
         "strict": 0,
+        "import/no-extraneous-dependencies": 1,
         indent: 0,
     }
 };

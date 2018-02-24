@@ -44,6 +44,7 @@
     "transform-runtime": "^0.0.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack-dev-middleware": "^2.0.6",
-    "webpack-hot-middleware": "^2.21.0"
+    "webpack-hot-middleware": "^2.21.0",
+    "react-init": "0.0.1"
   }
 }
