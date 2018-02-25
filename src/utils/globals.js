@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, IndexRedirect, Link, browserHistory } from 'react-router';
 /**
@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, IndexRedirect, Link, browserHistory } from '
  */
 window.React = React;
 window.ReactDOM = ReactDOM;
+window.Component = Component;
 /**
  * 路由
  */

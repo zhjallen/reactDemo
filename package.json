@@ -16,7 +16,9 @@
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router": "^4.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^3.0.0",
+    "redux": "^3.7.2",
     "webpack": "^3.11.0"
   },
   "devDependencies": {
@@ -40,11 +42,11 @@
     "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^1.1.7",
+    "react-init": "0.0.1",
     "style-loader": "^0.20.2",
     "transform-runtime": "^0.0.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack-dev-middleware": "^2.0.6",
-    "webpack-hot-middleware": "^2.21.0",
-    "react-init": "0.0.1"
+    "webpack-hot-middleware": "^2.21.0"
   }
 }

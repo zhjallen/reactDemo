@@ -30,3 +30,6 @@ app.listen(4000, function () {
 app.get('/', function (req, res) {
   res.sendFile(path.resolve(__dirname, '', 'index.html'))
 })
+app.get('*', function (req, res) {
+  res.sendFile(path.resolve(__dirname, '', 'index.html'))
+})
