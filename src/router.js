@@ -20,7 +20,7 @@ const appRoute = (
     // <Provider>
     <Router history={browserHistory}>
         <Route path='/' component={Dashboard}>
-            {LoginRouter}
+          {LoginRouter}
         </Route>
     </Router>
     // </Provider>

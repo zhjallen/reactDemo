@@ -3,7 +3,6 @@ export default class Dashboard extends Component {
         super();
     }
     render() {
-        console.log(this.props, 'props')
         return (
             <div>
                 {this.props.children || '主界面'}

@@ -3,10 +3,10 @@ export default class Layout extends Component {
         super();
     }
     render() {
-        console.log(this.props.children, 'props')
+        console.log(this.props, 'propslayout')
         return (
             <div>
-                <h1>登录界面</h1>
+                <span>loginLayout</span>
                 {this.props.children || 'children为空'}
             </div>
         );
