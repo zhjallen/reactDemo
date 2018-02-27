@@ -1,7 +1,5 @@
 import { Route, Router, IndexRoute, browserHistory } from 'react-router';
-import Layout from './view/layout';
 import Login from './view/login';
-import ModuleRoute from '../../utils/moduleRouter';
 
 // const LoginRouter = {
 //     path: 'login',
