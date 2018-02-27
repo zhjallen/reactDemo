@@ -2,15 +2,22 @@ import { Button, Input } from 'antd';
 import { Component } from 'react';
 import getNum from '../action/login';
 
-
+@connect(
+    state => {
+        return {
+            loginData: state.loginReducer,
+        }
+    },
+    dispatch => bindActionCreators({}, dispatch)
+)
 export default class Login extends Component {
     constructor(props) {
         super();
     }
     submit() {
-     console.log(store.getState(), 'store')
-    //  this.setState({})
-    store.dispatch(getNum());
+        console.log(this.props, 'ddstore')
+        //  this.setState({})
+        store.dispatch(getNum());
     }
     render() {
         return (

@@ -9,7 +9,7 @@ export default function reducer(state = initState, action) {
         case `${constant.NAME}GETNUM`:
             return {
                 ...state,
-                num: state.num + 1,
+                num: action.payload.meta.num,
             };
         default:
             return state;

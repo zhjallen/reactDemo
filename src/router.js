@@ -3,20 +3,18 @@
 // // 多语言定义
 // import enLocale from './intl/en-US';
 // import cnLocale from './intl/zh-CN';
-import {
-    combineReducers,
-    createStore,
-} from 'redux';
+import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { Router, browserHistory, Route } from 'react-router';
 import LoginRouter from './modules/login/router';
 import Dashboard from './modules/dashboard/view/dashboard';
 import loginReducer from './modules/login/reducer';
+import createStoreWithMiddleware from './utils/store';
 
 const reducers = combineReducers({
     loginReducer,
 });
-const store = createStore(reducers);
+const store = createStoreWithMiddleware()(reducers);
 window.store = store;
 // 读取多语言配置
 // const isZhCN =
