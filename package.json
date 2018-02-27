@@ -43,6 +43,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^1.1.7",
     "react-init": "0.0.1",
+    "react-thunk": "^1.0.0",
     "style-loader": "^0.20.2",
     "transform-runtime": "^0.0.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
