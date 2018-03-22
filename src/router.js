@@ -22,14 +22,14 @@ window.store = store;
 //     (navigator.language === 'zh-CN');
 // const appLocale = isZhCN ? cnLocale : enLocale;
 // addLocaleData(appLocale.data);
-
-const appRoute = (
-     <Provider store={store}>
-    <Router history={browserHistory}>
-        <Route path='/' component={Dashboard}>
-          {LoginRouter}
-        </Route>
-    </Router>
-     </Provider>
-);
-export default appRoute;
+const App = () =>
+    (
+        <Provider store={store}>
+            <Router history={browserHistory} >
+                <Route path='/' component={Dashboard}>
+                    {LoginRouter}
+                </Route>
+            </Router>
+        </Provider>
+    );
+export default App;

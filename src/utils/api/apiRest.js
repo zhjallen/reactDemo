@@ -23,7 +23,6 @@ class Api {
                     params,
                     data,
                 } = {}) => {
-                    console.log(data,'data')
                     new Promise((resolve, reject) => {
                         const url = this.opts.baseURI + path;
                         const request = superagent[method](url);
@@ -36,14 +35,14 @@ class Api {
                         if (data) {
                             request.send(data);
                         }
-                        request.end((err, res) => err ? reject({
+                        request.end((err, res) => (err ? reject({
                             body: res && res.body,
                             status: res && res.status,
-                            error: err
+                            error: err,
                         }) : resolve({
                             body: res.body,
-                            status: res.status
-                        }));
+                            status: res.status,
+                        })));
                     });
                 };
             });

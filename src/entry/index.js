@@ -1,5 +1,15 @@
+import { AppContainer } from 'react-hot-loader';
 import 'antd/dist/antd.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import '../utils/globals';
-import appRoute from '../router';
+import App from '../router';
 
-ReactDOM.render(appRoute, document.getElementById('react-demo'));
+
+ReactDOM.render(
+    <App />, document.getElementById('react-demo'),
+);
+
+if (module.hot) {
+    module.hot.accept();
+}

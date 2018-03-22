@@ -45,6 +45,7 @@
     "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-standard": "^3.0.1",
     "file-loader": "^1.1.7",
+    "react-hot-loader": "^4.0.0",
     "react-init": "0.0.1",
     "style-loader": "^0.20.2",
     "transform-runtime": "^0.0.0",

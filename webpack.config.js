@@ -10,6 +10,7 @@ module.exports = {
     /* 入口 */
     entry: [
         hotMiddlewareScript,
+        'react-hot-loader/patch',
         './src/entry/index.js',
     ],
 
@@ -20,12 +21,11 @@ module.exports = {
         publicPath: '/dist',
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        // new CleanWebpackPlugin(['dist']),
         new webpack.HotModuleReplacementPlugin(),
-        new UglifyJSPlugin(),
+        // new UglifyJSPlugin(),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('dev'),
-            'process.env.VERNAME': JSON.stringify('dev1'),
+            'process.env.NODE_ENV': JSON.stringify('development'),
         }),
     ],
     module: {

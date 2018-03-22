@@ -1,8 +1,8 @@
-import { Button, Input, Col, Form } from 'antd';
+import { Button, Input, Col, Row, Form } from 'antd';
 import { Component } from 'react';
 import getNum, { login } from '../action/login';
 
-const FormItem=Form.Item;
+const FormItem = Form.Item;
 @connect(
     state => {
         return {
@@ -28,24 +28,28 @@ export default class Login extends Component {
     render() {
         const { getFieldDecorator } = this.props.form;
         return (
-          <Form  className="login-form">
-            <FormItem>
-              {getFieldDecorator('user', {
-                rules: [{ required: true, message: 'Please input your username!' }],
-              })
-              (<Input placeholder="Username" />
-              )}
-            </FormItem>
-            <FormItem>
-              {getFieldDecorator('password', {
-                rules: [{ required: true, message: 'Please input your Password!' }],
-              })(
-                <Input  type="password" placeholder="Password" />
-              )}
-            </FormItem>
-            <Button onClick={this.login.bind(this)}>登录</Button>
+            <Form className="login-form">
+                <Row>
+                    <Col span='4'>
+                        <FormItem>
+                            {getFieldDecorator('user', {
+                                rules: [{ required: true, message: 'P666lease input your username!' }],
+                            })
+                                (<Input placeholder="Usee4eee4" />
+                                )}
+                        </FormItem>
+                        <FormItem>
+                            {getFieldDecorator('password', {
+                                rules: [{ required: true, message: 'Please input your Password!' }],
+                            })(
+                                <Input type="password" placeholder="Paseesword" />
+                            )}
+                        </FormItem>
+                    </Col>
+                </Row>
+                <Button onClick={this.login.bind(this)}>登eeedddee录</Button>
             </Form>
-            );
+        );
     }
 }
 Login = Form.create()(Login);
